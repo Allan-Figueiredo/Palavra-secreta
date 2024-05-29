@@ -1,0 +1,118 @@
+.game h1 {
+    font-size: 2.5em;
+  }
+  
+  .points span {
+    font-weight: bold;
+  }
+  
+  .tip span {
+    color: #ecfa00;
+  }
+  
+  .wordContainer {
+    margin: 1.5em;
+    padding: 1.5em;
+    border: 20px solid #ecfa00;
+    display: flex;
+  }
+  
+  .letter,
+  .blankSquare {
+    font-size: 70px;
+    line-height: 1.5;
+    border: 3px solid #000;
+    height: 100px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .letterContainer p {
+    margin-bottom: 1.2em;
+  }
+  
+  .letterContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .letterContainer input {
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 1em;
+  }
+
+
+  /* Para smartphones em paisagem */
+@media (max-width: 480px) {
+  .game h1 {
+       font-size: 2em; /* Reduz o tamanho da fonte para h1 */
+   }
+ 
+  .points span {
+       font-size: 1.2em; /* Reduz o tamanho da fonte para spans dentro de.points */
+   }
+ 
+  .tip span {
+       font-size: 1.2em; /* Reduz o tamanho da fonte para spans dentro de.tip */
+   }
+ 
+  .wordContainer {
+       margin: 1em;
+       padding: 1em;
+       border-width: 15px; /* Reduz o tamanho do border */
+   }
+ 
+  .letter,
+  .blankSquare {
+       font-size: 50px; /* Reduz o tamanho da fonte para letras e quadrados em branco */
+       height: 70px;
+       width: 70px;
+   }
+ 
+  .letterContainer input {
+       height: 35px;
+       width: 35px;
+       font-size: 1.5em; /* Ajusta o tamanho da fonte para os inputs */
+   }
+ }
+ 
+ /* Para smartphones em retrato */
+ @media (min-width: 320px) and (max-width: 480px) {
+  .game h1 {
+       font-size: 2em; /* Tamanho padrão da fonte para h1 em smartphones em retrato */
+   }
+ 
+  .points span {
+       font-size: 1.2em; /* Tamanho padrão da fonte para spans dentro de.points */
+   }
+ 
+  .tip span {
+       font-size: 1.2em; /* Tamanho padrão da fonte para spans dentro de.tip */
+   }
+ 
+  .wordContainer {
+       margin: 1em;
+       padding: 1em;
+       border-width: 15px; /* Tamanho padrão do border */
+   }
+ 
+  .letter,
+  .blankSquare {
+       font-size: 50px; /* Tamanho padrão da fonte para letras e quadrados em branco */
+       height: 70px;
+       width: 40px;
+   }
+ 
+  .letterContainer input {
+       height: 35px;
+       width: 35px;
+       font-size: 1.5em; /* Tamanho padrão da fonte para os inputs */
+   }
+ }
