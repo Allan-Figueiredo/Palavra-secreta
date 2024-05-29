@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg,rgb(28, 168, 168) 0%, rgba(0,0,0,1)100%);
+    color: rgb(255, 255, 255);
+}
+
+button {
+    background:rgb(18, 189, 189);
+    color:rgb(255, 255, 255);
+    padding: 0 45px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: aqua;
+
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 600px) {
+    /* Ajustes para telas menores que 600px de largura */
+    body {
+        font-size: 0.9em; /* Reduz o tamanho da fonte */
+    }
+
+    button {
+        padding: 0 35px; /* Reduz o padding dos botões */
+        font-size: 1em; /* Reduz o tamanho da fonte dos botões */
+    }
+}
+
+/* Media query para tablets em modo retrato */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Ajustes para tablets em modo retrato */
+    body {
+        font-size: 0.95em; /* Ajusta o tamanho da fonte */
+    }
+
+    button {
+        padding: 0 40px; /* Ajusta o padding dos botões */
+        font-size: 1.05em; /* Ajusta o tamanho da fonte dos botões */
+    }
+}
+
+/* Media query para desktops e laptops */
+@media (min-width: 1025px) {
+    /* Ajustes para desktops e laptops */
+    body {
+        font-size: 1em; /* Define o tamanho padrão da fonte para esses dispositivos */
+    }
+
+    button {
+        padding: 0 45px; /* Padding padrão para esses dispositivos */
+        font-size: 1.2em; /* Tamanho da fonte padrão para os botões */
+    }
+}
