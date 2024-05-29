@@ -12,7 +12,7 @@ const stages = [
   { id:3, name:"end" },
 ];
 
-const guessesQty = 3
+const guessesQty = 5
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
   const[guessedLetters, setGuessedLetters] = useState([]);
   const[wrongLetters, setWrongLetters] = useState([]);
   const[guesses, setGuesses] = useState (guessesQty);
-  const[score, setScore ] = useState (0);
+  const[score, setScore ] = useState (-200);
 
   const pickWordAndCategory = useCallback(() => {
     const categories = Object.keys(words);
@@ -115,6 +115,7 @@ function App() {
       setScore((actualScore) => actualScore += 100)
 
       startGame();
+      setGuesses(guessesQty);
 
 
     }
